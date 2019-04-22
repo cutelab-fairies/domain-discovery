@@ -1,0 +1,119 @@
+* {
+	margin: 0; padding: 0;
+	transition: all 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: #1d1f21;
+	color: #fff;
+}
+
+table {
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table td {
+	vertical-align: middle;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 400;
+}
+
+#header {
+	width: 100vw;
+	height: 70px;
+	background: #e91e63;
+}
+
+#header table {
+	height: 70px;
+}
+
+#header img {
+	display: block;
+	height: 50px;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.icon {
+	display: inline-block;
+	width: 24px; height: 24px;
+	fill: #fff;
+	margin-bottom: -7px;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+input, button, .button {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	background: #fff;
+	padding: 4px 8px;
+	border: solid 4px #fff;
+	border-radius: 8px;
+	width: calc(100% - 24px); /* padding*2 + border*2 */
+	color: #000;
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	text-align: left;
+	margin-bottom: 8px;
+}
+
+input:focus, button:focus, .button:focus {
+	outline: none;
+	border-color: #e91e63;
+}
+
+input[type=submit], button, .button {
+	width: 100%;
+	background: #e91e63;
+	border-color: #e91e63;
+	color: #fff;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+input[type=submit]:hover, button:hover, .button:hover {
+	background: transparent;
+}
+
+.popup {
+	position: fixed; margin: auto;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: rgba(23,31,33,0.8);
+	z-index: 999999;
+}
+
+.popup>div {
+	display: table;
+	height: 100vh;
+	margin: auto;
+}
+
+.popup>div>div {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#install {
+	background: rgba(255,255,255,0.2);
+	padding: 10px 0;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#install:hover {
+	opacity: 1;
+}
